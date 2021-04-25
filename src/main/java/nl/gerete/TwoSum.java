@@ -8,16 +8,10 @@ public class TwoSum {
 
 	public int[] getSum(int[] numbs, int target) {
 
-		int posFirstNumber;
-		int posSecondNumber;
 		for(int i = 0; i < numbs.length; i++) {
-			posFirstNumber = i;
-			int firstNumber = numbs[i];
 			for(int j = i + 1; j < numbs.length; j++) {
-				posSecondNumber = j;
-				int secondNumber = numbs[j];
-				if (firstNumber + secondNumber == target) {
-					return new int[]{posFirstNumber, posSecondNumber};
+				if (numbs[i] + numbs[j] == target) {
+					return new int[]{i, j};
 				}
 			}
 		}
