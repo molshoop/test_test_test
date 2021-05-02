@@ -47,7 +47,8 @@ class AddTwoNumbersTest {
 			Arguments.of(new int[]{2,4,3}, new int[]{5,6,4}, new int[]{7,0,8}),
 			Arguments.of(new int[]{0}, new int[]{0}, new int[]{0}),
 			Arguments.of(new int[]{9,9,9,9,9,9,9}, new int[]{9,9,9,9}, new int[]{8,9,9,9,0,0,0,1}),
-			Arguments.of(new int[]{9}, new int[]{1,9,9,9,9,9,9,9,9,9}, new int[]{0,0,0,0,0,0,0,0,0,0,1})
+			Arguments.of(new int[]{9}, new int[]{1,9,9,9,9,9,9,9,9,9}, new int[]{0,0,0,0,0,0,0,0,0,0,1}),
+			Arguments.of(new int[]{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1}, new int[]{5,6,4}, new int[]{6,6,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1})
 		);
 	}
 }
