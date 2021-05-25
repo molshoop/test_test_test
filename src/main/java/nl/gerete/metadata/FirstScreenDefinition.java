@@ -1,4 +1,9 @@
-package nl.gerete.generator;
+package nl.gerete.metadata;
+
+import nl.gerete.generator.FieldDefinition;
+import nl.gerete.generator.FieldType;
+import nl.gerete.generator.IScreenDefinition;
+import nl.gerete.generator.ScreenType;
 
 import java.util.ArrayList;
 import java.util.List;

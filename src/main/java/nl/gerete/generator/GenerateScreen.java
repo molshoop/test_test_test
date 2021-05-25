@@ -1,5 +1,8 @@
 package nl.gerete.generator;
 
+import nl.gerete.metadata.FirstScreenDefinition;
+import nl.gerete.metadata.SecondScreenDefinition;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
