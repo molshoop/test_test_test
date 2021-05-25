@@ -1,7 +1,7 @@
 package nl.gerete.generator;
 
-import nl.gerete.metadata.FirstScreenDefinition;
-import nl.gerete.metadata.SecondScreenDefinition;
+import nl.gerete.metadata.personen.OpvoerenPersoon;
+import nl.gerete.metadata.personen.Personen;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -25,8 +25,8 @@ public class GenerateScreen {
 		}
 		try {
 			List<IScreenDefinition> screens = new ArrayList<>();
-			screens.add(new FirstScreenDefinition());
-			screens.add(new SecondScreenDefinition());
+			screens.add(new OpvoerenPersoon());
+			screens.add(new Personen());
 			generateScreen.generateHelloWorld(args[0], screens);
 		} catch (Exception e) {
 			e.printStackTrace();

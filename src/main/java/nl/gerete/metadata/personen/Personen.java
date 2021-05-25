@@ -1,4 +1,4 @@
-package nl.gerete.metadata;
+package nl.gerete.metadata.personen;
 
 import nl.gerete.generator.FieldDefinition;
 import nl.gerete.generator.FieldType;
@@ -12,22 +12,22 @@ import java.util.List;
  * @author <a href="mailto:marc.mol@bloomville.nl">Marc Mol</a>
  * Created on 20-05-2021.
  */
-public class FirstScreenDefinition implements IScreenDefinition {
+public class Personen implements IScreenDefinition {
 
 	@Override public String getScreenName() {
-		return "Scherm0";
+		return "scherm1";
 	}
 
 	@Override
 	public String getTitle() {
-		return "Eerste scherm probeersel";
+		return "Tweede scherm probeersel";
 	}
 
 	public List<FieldDefinition> getFields() {
 		List<FieldDefinition> fields = new ArrayList<>();
-		fields.add(new FieldDefinition("veld1", "Veld 1", FieldType.string, 22));
-		fields.add(new FieldDefinition("veld2", "Veld 2", FieldType.date));
-		fields.add(new FieldDefinition("veld3", "Veld 3", FieldType.email));
+		fields.add(new FieldDefinition("veld1", "Veld 1", FieldType.string, 2));
+		fields.add(new FieldDefinition("veld2", "Veld 2", FieldType.file));
+		fields.add(new FieldDefinition("veld3", "Veld 3", FieldType.checkbox));
 		return fields;
 	}
 
